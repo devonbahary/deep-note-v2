@@ -1,5 +1,6 @@
-import express from "express";
 require("dotenv").config();
+import express from "express";
+import "./database/mongo";
 
 const app = express();
 
