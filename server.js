@@ -1,7 +1,7 @@
 require("dotenv").config();
 import express from "express";
 import bodyParser from "body-parser";
-import "./database/mongo";
+import "./database/mongo-client";
 import notes from "./routes/notes";
 
 const app = express();

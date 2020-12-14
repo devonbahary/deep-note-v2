@@ -1,5 +1,5 @@
 import express from "express";
-import { NotesService } from "../database/NotesService";
+import { NotesService } from "../database/notes-service";
 
 const router = express.Router();
 

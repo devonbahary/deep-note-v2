@@ -1,9 +1,9 @@
 import { ObjectId } from "mongodb";
-import { client } from "./mongo";
+import { mongoClient } from "./mongo-client";
 
 export class MongoService {
     constructor(collectionName) {
-        this.collection = client.db(process.env.MONGO_DB_NAME).collection(collectionName);
+        this.collection = mongoClient.db(process.env.MONGO_DB_NAME).collection(collectionName);
     }
 
     find(queryFilter = {}) {

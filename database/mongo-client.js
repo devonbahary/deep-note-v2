@@ -10,7 +10,7 @@ const {
 
 const uri = `mongodb+srv://${MONGO_DB_USER}:${MONGO_DB_PASSWORD}@${MONGO_DB_URI}/${MONGO_DB_NAME}?retryWrites=true&w=majority`;
 
-export const client = new MongoClient(
+export const mongoClient = new MongoClient(
     uri, 
     { 
         useNewUrlParser: true,
@@ -18,6 +18,6 @@ export const client = new MongoClient(
     },
 );
 
-client.connect(err => {
+mongoClient.connect(err => {
     if (err) throw err;
 });

@@ -1,4 +1,4 @@
-import { MongoService } from "./MongoService";
+import { MongoService } from "./mongo-service";
 
 export class NotesService extends MongoService {
     constructor() {
