@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb";
-import {client} from "./mongo";
+import { client } from "./mongo";
 
 export class MongoService {
     constructor(collectionName) {
