@@ -4,6 +4,7 @@
   "description": "second iteration of deep-note",
   "main": "index.js",
   "scripts": {
+    "watch": "concurrently \"npm run watch:client\" \"npm run watch:server\"",
     "watch:client": "webpack serve",
     "watch:server": "nodemon -r esm server.js"
   },
@@ -32,6 +33,7 @@
     "@babel/preset-env": "^7.12.10",
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
+    "concurrently": "^5.3.0",
     "css-loader": "^5.0.1",
     "nodemon": "^2.0.6",
     "npm": "^6.14.9",
