@@ -4,11 +4,6 @@ module.exports = {
     entry: {
         index: './client/App.js'
     },
-    devServer: {
-        contentBase: './client',
-    },
-    plugins: [],
-    devtool: 'inline-source-map',
     module: {
         rules: [{
             test: /\.js$/,
@@ -27,4 +22,5 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    plugins: [],
 };
